@@ -381,13 +381,13 @@ app.get('/api/resources', (req, res) => {
   res.json({ success: true, data: resources });
 });
 const path = require('path');
-const buildPath = path.join(__dirname, '../frontend/build');
+// const buildPath = path.join(__dirname, '../frontend/build');
 
-app.use(express.static(buildPath));
+// app.use(express.static(buildPath));
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(buildPath, 'index.html'));
-});
+// app.get('/*', (req, res) => {
+//   res.sendFile(path.join(buildPath, 'index.html'));
+// });
 
 
 // Start server
