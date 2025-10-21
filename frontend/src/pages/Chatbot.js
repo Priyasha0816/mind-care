@@ -57,7 +57,7 @@ const Chatbot = ({ user }) => {
     try {
       setError('');
       
-      const response = await fetch('http://localhost:5001/api/chatbot/message', {
+      const response = await fetch('https://mind-care-vvyn.onrender.com/api/chatbot/message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

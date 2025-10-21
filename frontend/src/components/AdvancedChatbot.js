@@ -73,7 +73,7 @@ const AdvancedChatbot = ({ user }) => {
     setMessages(prev => [...prev, typingMessage]);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/chatbot/message', {
+      const response = await axios.post('https://mind-care-vvyn.onrender.com/api/chatbot/message', {
         message: text.trim()
       });
 

@@ -24,7 +24,7 @@ const LoginSignupModal = ({ show, setShow, setUser }) => {
 
     try {
       const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
-      const response = await axios.post(`http://localhost:5000${endpoint}`, formData);
+      const response = await axios.post(`https://mind-care-vvyn.onrender.com${endpoint}`, formData);
       
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);

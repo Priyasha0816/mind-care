@@ -94,7 +94,7 @@ const PremiumChatbot = ({ user }) => {
     setTimeout(async () => {
       try {
         // Your actual API call would go here
-        const response = await fetch('http://localhost:5000/api/chatbot/message', {
+        const response = await fetch('https://mind-care-vvyn.onrender.com/chatbot/message', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
